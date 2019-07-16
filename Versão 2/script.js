@@ -1,3 +1,10 @@
+$(document).ready(function(e) {
+  alert("jquery funcionando corretamente");
+});
+
+
+
+
 $(window).on('load', function () {
     var
       ctx = $('#canvas')[0].getContext('2d'),
@@ -18,7 +25,7 @@ $(window).on('load', function () {
         frame = webkitRequestAnimationFrame(animloop),
         x = mouse.x,
         y = mouse.y,
-        r = 10,
+        r = 40,
         grad = ctx.createRadialGradient(x, y, 0, x, y, r);
       
       grad.addColorStop(0, "rgba(0, 0, 0, 255)");
